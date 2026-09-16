@@ -9,11 +9,11 @@ cualquier hosting estático.
 1. **Fotos reales.** Las imágenes en `assets/img/` son *placeholders* generados
    (fondo gris con silueta, o gráficos ilustrativos) para que el diseño se vea completo
    mientras tanto. Reemplaza cada archivo por la foto real **con el mismo nombre**:
-   - `hero-frente-estetoscopio.jpg` → Foto 1 (cuerpo completo, frente, estetoscopio) — Hero
-   - `closeup-lateral.jpg` → Foto 2 (close-up, mirando de lado) — Sobre mí
-   - `retrato-bata-manos.jpg` → Foto 3 (sonrisa amplia de frente) — Contacto (avatar)
-   - `mirada-lateral.jpg` → Foto 4 (mirando arriba/lado) — banda "¿Lista para empezar?"
-   - `banquito-sentada.jpg` → Foto 5 (sentada en banquito) — Sobre mí
+   - `hero-frente-estetoscopio.jpg` → Foto de cuerpo completo, frente, estetoscopio — **Hero / portada**
+   - `banquito-sentada.jpg` → Foto sentada en banquito — **Sobre mí**
+   - `mirada-lateral.jpg` → Foto de pie, mirando hacia un lado — **Sobre mí**
+   - `closeup-lateral.jpg` → Foto close-up, mirando de lado — banda "¿Lista para empezar?"
+   - `retrato-bata-manos.jpg` → Foto sonrisa amplia de frente, manos en la bata — Contacto (avatar)
    - `servicio-*.jpg`, `blog-*.jpg`, `informe-isak.jpg` → opcional, puedes sustituirlas
      por fotografía real de cada servicio/receta o dejar las ilustraciones actuales.
 
