@@ -95,6 +95,17 @@ def duotone_icon_card(path, size, icon, tag):
         d.ellipse([cx - s, cy - s * 0.55, cx + s, cy + s * 0.55], outline=stroke, width=lw)
         d.ellipse([cx - s * 0.55, cy - s, cx + s * 0.55, cy + s], outline=stroke, width=lw)
         d.ellipse([cx - s * 0.18, cy - s * 0.18, cx + s * 0.18, cy + s * 0.18], fill=accent)
+    elif icon == "dumbbell":
+        d.line([cx - s * 0.9, cy, cx + s * 0.9, cy], fill=accent, width=lw)
+        for dx in (-1, 1):
+            d.rounded_rectangle(
+                [cx + dx * s * 0.7 - s * 0.16, cy - s * 0.55, cx + dx * s * 0.7 + s * 0.16, cy + s * 0.55],
+                radius=s * 0.08, outline=stroke, width=lw,
+            )
+            d.rounded_rectangle(
+                [cx + dx * s * 0.95 - s * 0.1, cy - s * 0.32, cx + dx * s * 0.95 + s * 0.1, cy + s * 0.32],
+                radius=s * 0.05, outline=stroke, width=lw,
+            )
 
     cap_h = int(h * 0.16)
     d.rectangle([0, h - cap_h, w, h], fill=(255, 255, 255, 14))
@@ -117,6 +128,7 @@ AREAS = [
     ("area-hipertension.jpg", "heart-pulse", "HIPERTENSIÓN ARTERIAL"),
     ("area-dislipidemia.jpg", "lipid", "DISLIPIDEMIAS"),
     ("area-sindrome-metabolico.jpg", "orbit", "SÍNDROME METABÓLICO"),
+    ("area-nutricion-deportiva.jpg", "dumbbell", "NUTRICIÓN DEPORTIVA"),
 ]
 
 for fname, icon, tag in AREAS:
