@@ -435,6 +435,38 @@ h1, h2, h3, h4 { text-wrap: balance; line-height: 1.08; letter-spacing: -0.01em;
 .credential p { font-size: 0.88rem; color: var(--ink-mute); }
 
 /* =============================================================
+   7b. Áreas de atención
+   ============================================================= */
+.areas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.4rem;
+}
+.area-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--paper);
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid var(--line-soft);
+  box-shadow: var(--shadow-soft);
+  transition: transform .5s var(--ease-out), box-shadow .5s var(--ease-out);
+}
+.area-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lift); }
+.area-media { aspect-ratio: 5/4; overflow: hidden; }
+.area-media img { width: 100%; height: 100%; object-fit: cover; transition: transform .8s var(--ease-out); }
+.area-card:hover .area-media img { transform: scale(1.06); }
+.area-body { padding: 1.3rem 1.4rem 1.5rem; display: flex; flex-direction: column; flex: 1; }
+.area-title { font-size: 1.14rem; margin-bottom: 0.4rem; }
+.area-desc { font-size: 0.88rem; color: var(--ink-mute); flex: 1; margin-bottom: 1rem; }
+.area-link {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  font-size: 0.85rem; font-weight: 600; color: var(--petroleo);
+  transition: gap .3s var(--ease-out);
+}
+.area-card:hover .area-link { gap: 0.65rem; }
+
+/* =============================================================
    8. Servicios
    ============================================================= */
 .services-grid {
@@ -761,6 +793,66 @@ h1, h2, h3, h4 { text-wrap: balance; line-height: 1.08; letter-spacing: -0.01em;
 }
 
 /* =============================================================
+   15b. Área de atención — página de detalle
+   ============================================================= */
+.area-hero {
+  padding-block: calc(var(--nav-h) + 2.5rem) 2.5rem;
+  background: var(--bg-alt);
+}
+.area-breadcrumb {
+  display: flex; align-items: center; gap: 0.4rem;
+  font-size: 0.85rem; color: var(--ink-mute); margin-bottom: 1.6rem;
+}
+.area-breadcrumb a { color: var(--petroleo); font-weight: 600; }
+.area-breadcrumb a:hover { text-decoration: underline; }
+.area-hero-title { font-size: clamp(2rem, 4.5vw, 3rem); max-width: 20ch; }
+.area-hero-sub { margin-top: 0.9rem; font-size: 1.08rem; color: var(--ink-mute); max-width: 60ch; }
+
+.area-article { padding-block: clamp(3rem, 7vw, 5rem); }
+.area-article-inner { max-width: 720px; margin-inline: auto; }
+.area-article-inner > p.lede { font-size: 1.12rem; color: var(--ink-soft); margin-bottom: 0.5rem; }
+.area-article-inner h2 {
+  font-size: 1.5rem;
+  margin-top: 2.6rem;
+  margin-bottom: 0.9rem;
+}
+.area-article-inner p { color: var(--ink-soft); margin-bottom: 1rem; }
+.area-article-inner ul { display: grid; gap: 0.7rem; margin: 1rem 0 1.4rem; }
+.area-article-inner ul li {
+  display: flex; gap: 0.7rem; align-items: flex-start;
+  font-size: 0.98rem; color: var(--ink-soft);
+}
+.area-article-inner ul li svg { flex-shrink: 0; margin-top: 0.25rem; color: var(--coral-d); }
+.area-note {
+  margin-top: 0.6rem;
+  padding: 1.1rem 1.3rem;
+  background: var(--petroleo-soft);
+  border-radius: 14px;
+  font-size: 0.92rem;
+  color: var(--petroleo);
+}
+.area-particular {
+  margin-top: 2.6rem;
+  padding: 1.5rem 1.6rem;
+  background: var(--bg-alt);
+  border-left: 3px solid var(--coral);
+  border-radius: 0 14px 14px 0;
+}
+.area-particular h2 { margin-top: 0; font-size: 1.2rem; }
+.area-closing {
+  margin-top: 3rem;
+  padding-top: 2.4rem;
+  border-top: 1px solid var(--line-soft);
+  text-align: center;
+}
+.area-closing p { max-width: 52ch; margin-inline: auto 1.6rem; font-size: 1.05rem; }
+.area-other {
+  border-top: 1px solid var(--line-soft);
+  padding-block: clamp(3rem, 6vw, 4.5rem);
+  background: var(--bg-alt);
+}
+
+/* =============================================================
    16. Responsive
    ============================================================= */
 @media (min-width: 540px) {
@@ -790,4 +882,4 @@ h1, h2, h3, h4 { text-wrap: balance; line-height: 1.08; letter-spacing: -0.01em;
 }
 
 /* Nav offset so content isn't hidden behind fixed bar */
-#sobre-mi, #servicios, #blog, #faq, #contacto { scroll-margin-top: var(--nav-h); }
+#sobre-mi, #areas-atencion, #servicios, #blog, #faq, #contacto { scroll-margin-top: var(--nav-h); }
