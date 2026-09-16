@@ -6,36 +6,29 @@ cualquier hosting estático.
 
 ## Antes de publicar — edita esto
 
-1. **Fotos reales.** Las imágenes en `assets/img/` son *placeholders* generados
-   (fondo gris con silueta, o gráficos ilustrativos) para que el diseño se vea completo
-   mientras tanto. Reemplaza cada archivo por la foto real **con el mismo nombre**:
-   - `hero-frente-estetoscopio.jpg` → Foto de cuerpo completo, frente, estetoscopio — **Hero / portada**
-   - `banquito-sentada.jpg` → Foto sentada en banquito — **Sobre mí**
-   - `mirada-lateral.jpg` → Foto de pie, mirando hacia un lado — **Sobre mí**
-   - `closeup-lateral.jpg` → Foto close-up, mirando de lado — banda "¿Lista para empezar?"
-   - `retrato-bata-manos.jpg` → Foto sonrisa amplia de frente, manos en la bata — Contacto (avatar)
-   - `servicio-*.jpg`, `blog-*.jpg`, `informe-isak.jpg` → opcional, puedes sustituirlas
-     por fotografía real de cada servicio/receta o dejar las ilustraciones actuales.
+1. **Fotos.** Las 5 fotos principales (hero, Sobre mí ×2, banda "¿Lista para empezar?",
+   avatar de Contacto) ya son las reales. Las de `servicio-*.jpg`, `blog-*.jpg` e
+   `informe-isak.jpg` siguen siendo ilustraciones genéricas — opcional sustituirlas por
+   fotografía real de cada servicio/receta si quieres.
 
-2. **Enlaces de Cal.com.** Abre `lib/manifest.js` (o busca `[CAL_LINK_` en `index.html`)
-   y reemplaza cada `[CAL_LINK_...]` por la URL real de reserva de ese servicio.
+2. **Precios.** Busca `[PRECIO]` en `index.html` (una vez por tarjeta de servicio) y
+   escribe el precio real de cada consulta, o quítalo si prefieres no mostrar precio.
 
-3. **Precios.** Busca `[PRECIO]` en `index.html` (una vez por tarjeta de servicio) y
-   escribe el precio real de cada consulta.
-
-4. **Correo de contacto.** En `lib/manifest.js`, cambia `contactEmail`. El formulario de
+3. **Correo de contacto.** En `lib/manifest.js`, cambia `contactEmail`. El formulario de
    contacto no tiene backend (sitio estático): al enviarlo, se abre el cliente de correo
    del visitante con el mensaje ya redactado. Si más adelante quieres que el formulario
    envíe sin abrir el correo, se puede conectar a un servicio como Formspree.
 
-5. **Dirección y mapa.** En la sección Contacto y en el footer, busca
+4. **Dirección y mapa.** En la sección Contacto y en el footer, busca
    `[DIRECCIÓN DEL CONSULTORIO]` y el comentario `EDITA AQUÍ` sobre el `<iframe>` del
    mapa: reemplaza el `bbox`/`marker` por la ubicación real (openstreetmap.org permite
    copiar ese enlace desde su propio botón "Compartir").
 
-6. **WhatsApp.** El número (`18097499916`) está centralizado en `lib/manifest.js`
-   (`whatsappNumber`) y se usa tanto en el widget flotante como en los botones de
-   servicio.
+5. **WhatsApp.** El número (`18097499916`) está centralizado en `lib/manifest.js`
+   (`whatsappNumber`) y se usa en el widget flotante, en los tres botones "Reservar
+   consulta" (menú, portada) y en el botón de la sección Servicios. La reserva es 100%
+   manual: el visitante escribe por WhatsApp y tú coordinas y confirmas la cita
+   directamente con cada paciente (no hay Cal.com ni calendario en línea conectado).
 
 ## Estructura
 
@@ -43,8 +36,8 @@ cualquier hosting estático.
 index.html          página única (todas las secciones son anclas: #sobre-mi, #servicios…)
 styles.css           todos los estilos
 main.js              toda la lógica (sin dependencias externas)
-lib/manifest.js       datos editables (WhatsApp, Cal.com, correo)
-assets/img/           imágenes (placeholders a sustituir, ver arriba)
+lib/manifest.js       datos editables (WhatsApp, correo)
+assets/img/           imágenes (las 5 principales ya son reales, ver arriba)
 tools/gen_placeholders.py   script que generó los placeholders — no se usa en producción, puedes borrarlo
 .htaccess             cache-control para Hostinger/Apache
 ```
