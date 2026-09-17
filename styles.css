@@ -221,7 +221,7 @@ h1, h2, h3, h4 { text-wrap: balance; line-height: 1.08; letter-spacing: -0.01em;
   transition: color .3s var(--ease-out);
 }
 .nav:not(.is-scrolled) .brand { color: var(--petroleo); }
-.brand-icon { width: 28px; height: 28px; flex-shrink: 0; }
+.brand-icon { height: 28px; width: auto; flex-shrink: 0; }
 .brand-word { line-height: 1; }
 
 .nav-links {
@@ -715,10 +715,12 @@ h1, h2, h3, h4 { text-wrap: balance; line-height: 1.08; letter-spacing: -0.01em;
 }
 .wa-avatar {
   width: 38px; height: 38px; border-radius: 50%;
-  background: var(--coral); color: var(--petroleo-d);
+  background: var(--paper);
   display: flex; align-items: center; justify-content: center;
-  font-family: var(--serif); font-weight: 600;
+  overflow: hidden;
+  flex-shrink: 0;
 }
+.wa-avatar img { width: 62%; height: 62%; object-fit: contain; }
 .wa-head-text strong { display: block; font-size: 0.92rem; }
 .wa-head-text span { font-size: 0.76rem; color: rgba(247,243,236,0.75); display: flex; align-items: center; gap: 0.35rem; }
 .wa-head-text span::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: #5fd68a; }
