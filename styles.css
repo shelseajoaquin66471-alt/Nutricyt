@@ -91,6 +91,20 @@ h1, h2, h3, h4 { text-wrap: balance; line-height: 1.08; letter-spacing: -0.01em;
 .section { position: relative; padding-block: clamp(4rem, 9vw, 8rem); }
 .section-alt { background: var(--bg-alt); }
 .section-dark { background: var(--petroleo); color: var(--cream); }
+.has-watermark { overflow: hidden; isolation: isolate; }
+.brand-watermark {
+  position: absolute;
+  top: -12%; right: -10%;
+  z-index: -1;
+  width: min(460px, 55vw);
+  pointer-events: none;
+  opacity: 0.05;
+  animation: watermarkSpin 100s linear infinite;
+}
+.brand-watermark-left { top: -8%; right: auto; left: -12%; }
+.brand-watermark img { display: block; width: 100%; height: auto; }
+@keyframes watermarkSpin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .brand-watermark { animation: none; } }
 .section-head { max-width: 640px; margin-bottom: clamp(2.5rem, 5vw, 4.5rem); }
 .section-head.center { margin-inline: auto; text-align: center; }
 .eyebrow {
