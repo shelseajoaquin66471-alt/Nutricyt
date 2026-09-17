@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NUTRICYT · Shelsea García — Nutricionista-Dietista</title>
+<meta name="description" content="Consultas de nutrición clínica con Shelsea García, Nutricionista-Dietista e ISAK Level 1 Anthropometrist. Nutriendo tus células, potenciando tu vida.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap">
+
+<link rel="preload" as="image" href="assets/img/hero-nueva.jpg" fetchpriority="high">
+<link rel="stylesheet" href="styles.css?v=20260916">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232e4a54'/%3E%3Cpath d='M11 5c0 0 12 4 12 11s-12 11-12 11' stroke='%23e4a18e' stroke-width='2.2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+</head>
+<body>
+<a class="skip-link" href="#main">Saltar al contenido</a>
+
+<!-- =========================================================
+     NAV
+     ========================================================= -->
+<header class="nav" data-nav>
+  <div class="nav-inner">
+    <a class="brand" href="#top" aria-label="NUTRICYT — inicio">
+      <img class="brand-icon" src="assets/img/logo-icon.png" alt="">
+      <span class="brand-word">nutricyt</span>
+    </a>
+
+    <nav class="nav-links" aria-label="Navegación principal">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#areas-atencion">Áreas</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#blog">Blog</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a class="btn btn-primary btn-sm nav-cta" href="https://wa.me/18097499916?text=Hola%2C%20quiero%20reservar%20una%20consulta%20de%20nutrici%C3%B3n" target="_blank" rel="noopener">Reservar consulta</a>
+      <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="nav-mobile" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Kept OUTSIDE <header>: backdrop-filter on .nav (when scrolled/open) would
+     otherwise create a new containing block and break this fixed overlay's sizing. -->
+<nav id="nav-mobile" class="nav-mobile" data-nav-mobile aria-label="Navegación móvil">
+  <a href="#sobre-mi">Sobre mí</a>
+  <a href="#areas-atencion">Áreas de atención</a>
+  <a href="#servicios">Servicios</a>
+  <a href="#blog">Blog</a>
+  <a href="#contacto">Contacto</a>
+  <a class="btn btn-primary" href="https://wa.me/18097499916?text=Hola%2C%20quiero%20reservar%20una%20consulta%20de%20nutrici%C3%B3n" target="_blank" rel="noopener">Reservar consulta</a>
+</nav>
+
+<main id="main">
+
+  <!-- =========================================================
+       HERO
+       ========================================================= -->
+  <section class="hero hero-split" id="top">
+    <div class="hero-split-text">
+      <p class="hero-split-brand">Nutricyt</p>
+      <h1 class="hero-title hero-impact">Tu salud comienza desde adentro.</h1>
+      <p class="hero-sub">Nutriendo tus células, potenciando tu salud.<br>Nutrición clínica personalizada basada en evidencia científica.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://wa.me/18097499916?text=Hola%2C%20quiero%20reservar%20una%20consulta%20de%20nutrici%C3%B3n" target="_blank" rel="noopener">Agendar consulta</a>
+      </div>
+    </div>
+
+    <div class="hero-split-media">
+      <img data-hero-media src="assets/img/hero-nueva.jpg"
+           alt="Shelsea García, nutricionista-dietista, de pie con bata blanca y estetoscopio"
+           fetchpriority="high" loading="eager" decoding="sync">
+    </div>
+
+    <div class="hero-ticker" aria-hidden="true">
+      <div class="hero-ticker-track">
+        <span>Pérdida de peso</span><span class="hero-ticker-dot"></span>
+        <span>Aumento de peso</span><span class="hero-ticker-dot"></span>
+        <span>Diabetes tipo 2</span><span class="hero-ticker-dot"></span>
+        <span>Hipertensión arterial</span><span class="hero-ticker-dot"></span>
+        <span>Dislipidemias</span><span class="hero-ticker-dot"></span>
+        <span>Síndrome metabólico</span><span class="hero-ticker-dot"></span>
+        <span>Nutrición deportiva</span><span class="hero-ticker-dot"></span>
+        <span>Pérdida de peso</span><span class="hero-ticker-dot"></span>
+        <span>Aumento de peso</span><span class="hero-ticker-dot"></span>
+        <span>Diabetes tipo 2</span><span class="hero-ticker-dot"></span>
+        <span>Hipertensión arterial</span><span class="hero-ticker-dot"></span>
+        <span>Dislipidemias</span><span class="hero-ticker-dot"></span>
+        <span>Síndrome metabólico</span><span class="hero-ticker-dot"></span>
+        <span>Nutrición deportiva</span><span class="hero-ticker-dot"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       SOBRE MÍ
+       ========================================================= -->
+  <section class="section has-watermark" id="sobre-mi">
+    <div class="brand-watermark" aria-hidden="true"><img src="assets/img/logo-icon-watermark.png" alt=""></div>
+    <div class="container about-grid">
+
+      <div class="about-media reveal">
+        <div>
+          <a class="ph-1" href="assets/img/banquito-sentada.jpg" aria-label="Ver foto completa">
+            <img src="assets/img/banquito-sentada.jpg" alt="Shelsea García sentada en un banquito de madera, con bata blanca" loading="lazy" decoding="async">
+          </a>
+        </div>
+        <div>
+          <a class="ph-2" href="assets/img/mirada-lateral.jpg" aria-label="Ver foto completa">
+            <img src="assets/img/mirada-lateral.jpg" alt="Shelsea García de pie, con bata blanca, mirando hacia un lado" loading="lazy" decoding="async">
+          </a>
+        </div>
+        <div class="about-badge">
+          <strong>1:1</strong>
+          Atención personalizada, presencial y virtual — sin fórmulas genéricas.
+        </div>
+      </div>
+
+      <div class="about-text reveal">
+        <p class="eyebrow">Sobre mí</p>
+        <h2 class="section-title">Shelsea García</h2>
+        <p class="lede">Soy Shelsea García, Nutricionista-Dietista egresada de la Pontificia Universidad Católica Madre y Maestra (PUCMM), con formación orientada a la nutrición clínica, preventiva y comunitaria.</p>
+        <p>Durante mi formación realicé prácticas clínicas en la Consulta Nutricional Universitaria de la PUCMM, el Hospital Regional Universitario José María Cabral y Báez, y el Hospital Infantil Regional Universitario Dr. Arturo Grullón, participando en la evaluación, intervención y seguimiento nutricional de pacientes pediátricos y adultos. También he participado en jornadas comunitarias de promoción y prevención de la salud, realizando tamizajes de hipertensión arterial, diabetes mellitus, riesgo cardiovascular y riesgo metabólico, además de educación alimentaria dirigida a comunidades vulnerables.</p>
+        <p>Actualmente desarrollo mi práctica profesional a través de <strong>NUTRICYT</strong> y como nutricionista clínica en el Consultorio de Nutrición y Dietética de la PUCMM, con un enfoque basado en la evidencia científica, la educación nutricional y la atención personalizada.</p>
+
+        <div class="credentials">
+          <div class="credential">
+            <span class="credential-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 3l9 4.5-9 4.5-9-4.5L12 3z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M6 10.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-5.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </span>
+            <div>
+              <h3>Egresada PUCMM</h3>
+              <p>Pontificia Universidad Católica Madre y Maestra.</p>
+            </div>
+          </div>
+          <div class="credential">
+            <span class="credential-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 12h16M4 12a2 2 0 100 4M4 12a2 2 0 110-4M20 12a2 2 0 100 4M20 12a2 2 0 110-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </span>
+            <div>
+              <h3>ISAK Level 1 Anthropometrist</h3>
+              <p>Exequátur 220-26 · Medición antropométrica bajo protocolo internacional.</p>
+            </div>
+          </div>
+          <div class="credential">
+            <span class="credential-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/></svg>
+            </span>
+            <div>
+              <h3>Nutrición clínica, preventiva y comunitaria</h3>
+              <p>Evaluación, intervención y seguimiento nutricional.</p>
+            </div>
+          </div>
+          <div class="credential">
+            <span class="credential-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 3l9 4.5-9 4.5-9-4.5L12 3z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M6 10.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-5.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </span>
+            <div>
+              <h3>Máster en Nutrición Clínica <em style="font-style:normal;color:var(--ink-mute);font-weight:400;">(en curso)</em></h3>
+              <p>Universidad Europea.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================
+       ÁREAS DE ATENCIÓN
+       ========================================================= -->
+  <section class="section" id="areas-atencion">
+    <div class="container">
+      <div class="section-head center reveal">
+        <p class="eyebrow" style="justify-content:center;">¿En qué puedo ayudarte?</p>
+        <h2 class="section-title">Áreas de atención</h2>
+        <p class="section-sub" style="margin-inline:auto;">Cada abordaje comienza con una evaluación nutricional individualizada, adaptada a tus necesidades y objetivos.<br>Explora cada área para conocer nuestro enfoque.</p>
+      </div>
+
+      <div class="areas-grid reveal-stagger">
+        <a class="area-card" href="areas/perdida-de-peso.html">
+          <div class="area-icon-wrap"><span class="area-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="14" width="16" height="7" rx="2" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="17.4" r="1.2" fill="currentColor"/><path d="M12 3v7M9 7l3 3 3-3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+          <div class="area-body">
+            <h3 class="area-title">Pérdida de peso</h3>
+            <p class="area-desc">Un proceso sostenible, sin dietas restrictivas ni resultados exprés.</p>
+            <span class="area-link">Conocer más <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </div>
+        </a>
+
+        <a class="area-card" href="areas/aumento-de-peso.html">
+          <div class="area-icon-wrap"><span class="area-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="14" width="16" height="7" rx="2" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="17.4" r="1.2" fill="currentColor"/><path d="M12 10V3M9 6l3-3 3 3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+          <div class="area-body">
+            <h3 class="area-title">Aumento de peso</h3>
+            <p class="area-desc">Ganar peso de forma saludable también requiere una estrategia.</p>
+            <span class="area-link">Conocer más <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </div>
+        </a>
+
+        <a class="area-card" href="areas/diabetes-tipo-2.html">
+          <div class="area-icon-wrap"><span class="area-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2.5c3 4 6 7.5 6 11a6 6 0 11-12 0c0-3.5 3-7 6-11z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M8.3 14.2h2l1-2 1.5 4 1-2h1.9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+          <div class="area-body">
+            <h3 class="area-title">Diabetes mellitus tipo 2</h3>
+            <p class="area-desc">Manejo nutricional del azúcar en sangre, en conjunto con tu médico.</p>
+            <span class="area-link">Conocer más <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </div>
+        </a>
+
+        <a class="area-card" href="areas/hipertension-arterial.html">
+          <div class="area-icon-wrap"><span class="area-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20.2c-.3 0-.6-.1-.8-.3C7 16.6 2.7 13 2.7 8.8 2.7 6 4.9 4 7.5 4c1.7 0 3.3.9 4.5 2.4C13.2 4.9 14.8 4 16.5 4c2.6 0 4.8 2 4.8 4.8 0 4.2-4.3 7.8-8.5 11.1-.2.2-.5.3-.8.3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M4.5 12h3l1.8-3.6 1.7 6 1.5-4.4 1.2 2h4.3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+          <div class="area-body">
+            <h3 class="area-title">Hipertensión arterial</h3>
+            <p class="area-desc">Estrategias alimentarias para acompañar el control de la presión arterial.</p>
+            <span class="area-link">Conocer más <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </div>
+        </a>
+
+        <a class="area-card" href="areas/dislipidemias.html">
+          <div class="area-icon-wrap"><span class="area-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><circle cx="9" cy="9" r="3.4" stroke="currentColor" stroke-width="1.6"/><circle cx="15" cy="9" r="3.4" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="14.6" r="3.4" stroke="currentColor" stroke-width="1.6"/></svg></span></div>
+          <div class="area-body">
+            <h3 class="area-title">Dislipidemias</h3>
+            <p class="area-desc">Ajustes en el tipo de grasas y fibra de tu alimentación.</p>
+            <span class="area-link">Conocer más <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </div>
+        </a>
+
+        <a class="area-card" href="areas/sindrome-metabolico.html">
+          <div class="area-icon-wrap"><span class="area-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 16a8 8 0 1116 0" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M12 16l3.3-4.3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="12" cy="16" r="1.1" fill="currentColor"/></svg></span></div>
+          <div class="area-body">
+            <h3 class="area-title">Síndrome metabólico</h3>
+            <p class="area-desc">Un abordaje integral cuando varios factores de riesgo se combinan.</p>
+            <span class="area-link">Conocer más <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </div>
+        </a>
+
+        <a class="area-card" href="areas/nutricion-deportiva.html">
+          <div class="area-icon-wrap"><span class="area-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M6 12h12" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><rect x="2.3" y="9.3" width="3" height="5.4" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="18.7" y="9.3" width="3" height="5.4" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="4.7" y="10.4" width="2" height="3.2" fill="currentColor"/><rect x="17.3" y="10.4" width="2" height="3.2" fill="currentColor"/></svg></span></div>
+          <div class="area-body">
+            <h3 class="area-title">Nutrición deportiva</h3>
+            <p class="area-desc">Antropometría ISAK aplicada a tu disciplina, sin prometer un número en la báscula.</p>
+            <span class="area-link">Conocer más <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       SERVICIOS
+       ========================================================= -->
+  <section class="services-band" id="servicios">
+    <div class="container services-band-grid">
+      <div class="services-band-text reveal">
+        <p class="eyebrow eyebrow-on-dark">Servicios</p>
+        <h2 class="section-title services-band-title">Consultas pensadas para tu proceso</h2>
+        <p class="services-band-sub">Cada consulta tiene un propósito claro dentro de tu proceso. Para reservar, escríbeme directo por WhatsApp.</p>
+
+        <ol class="services-list">
+          <li>
+            <span class="services-list-num">01</span>
+            <div class="services-list-body">
+              <div class="services-list-head">
+                <h3>Evaluación inicial</h3>
+                <span class="services-list-meta">1 h</span>
+              </div>
+              <p>Revisamos tu historia clínico-nutricional completa, antecedentes personales y familiares, y hacemos la primera antropometría para definir tus objetivos y el punto de partida de tu plan.</p>
+            </div>
+          </li>
+          <li>
+            <span class="services-list-num">02</span>
+            <div class="services-list-body">
+              <div class="services-list-head">
+                <h3>Asesoría personal</h3>
+                <span class="services-list-meta">45 min</span>
+              </div>
+              <p>Diseño tu plan de alimentación individualizado, ajustado a tus gustos, rutina y presupuesto, con educación nutricional continua.</p>
+            </div>
+          </li>
+          <li>
+            <span class="services-list-num">03</span>
+            <div class="services-list-body">
+              <div class="services-list-head">
+                <h3>Detalles de estilo de vida</h3>
+                <span class="services-list-meta">40 min</span>
+              </div>
+              <p>Integramos sueño, actividad física, manejo del estrés y rutina diaria — muchas veces ahí está la clave de que un plan se sostenga.</p>
+            </div>
+          </li>
+          <li>
+            <span class="services-list-num">04</span>
+            <div class="services-list-body">
+              <div class="services-list-head">
+                <h3>Seguimiento</h3>
+                <span class="services-list-meta">30 min</span>
+              </div>
+              <p>Revisamos tu evolución, tomamos una nueva medición antropométrica y ajustamos el plan según cómo haya ido.</p>
+            </div>
+          </li>
+        </ol>
+
+      </div>
+
+      <div class="services-band-media reveal">
+        <img src="assets/img/retrato-bata-manos.jpg" alt="Shelsea García sonriendo, con bata blanca" loading="lazy" decoding="async">
+        <div class="services-band-quote">
+          <p>“A través de una asesoría continua y cercana, te acompaño en el cambio de hábitos, cuidando no solo lo que comes, sino cómo te sientes en el proceso.”</p>
+          <span>— Shelsea García, Nutricionista-Dietista</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       CTA BAND
+       ========================================================= -->
+  <section class="cta-band">
+    <div class="cta-band-media">
+      <img src="assets/img/closeup-lateral.jpg" alt="Retrato de Shelsea García sonriendo, con su nombre y título bordados en la bata" loading="lazy" decoding="async">
+    </div>
+    <div class="cta-band-inner container reveal">
+      <p class="eyebrow" style="justify-content:center;">¿Lista para empezar?</p>
+      <h2 class="section-title">Tu primera consulta puede ser esta semana</h2>
+      <div class="hero-actions" style="justify-content:center;">
+        <a class="btn btn-primary" href="#servicios">Ver servicios y horarios</a>
+        <a class="btn btn-ghost btn-on-dark" href="https://wa.me/18097499916?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20tus%20consultas%20de%20nutrici%C3%B3n" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       BLOG
+       ========================================================= -->
+  <section class="section" id="blog">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Blog</p>
+        <h2 class="section-title">Notas sobre nutrición</h2>
+        <p class="section-sub">Recetas, consejos prácticos y artículos sobre nutrición basados en evidencia.</p>
+      </div>
+
+      <div class="blog-grid reveal-stagger">
+        <a class="blog-card is-featured" href="#blog">
+          <span class="blog-tag">Consejos</span>
+          <img src="assets/img/blog-consejos.jpg" alt="Consejos para sostener la energía durante la semana" loading="lazy" decoding="async">
+          <div class="blog-info">
+            <div class="blog-meta"><span>02 sep 2026</span><span class="dot"></span><span>6 min de lectura</span></div>
+            <h3 class="blog-title">5 hábitos que sostienen tu energía durante la semana</h3>
+          </div>
+        </a>
+
+        <a class="blog-card" href="#blog">
+          <span class="blog-tag">Recetas</span>
+          <img src="assets/img/blog-recetas.jpg" alt="Bowl de avena, mango y semillas de chía" loading="lazy" decoding="async">
+          <div class="blog-info">
+            <div class="blog-meta"><span>20 ago 2026</span><span class="dot"></span><span>4 min</span></div>
+            <h3 class="blog-title">Bowl de avena, mango y semillas de chía</h3>
+          </div>
+        </a>
+
+        <a class="blog-card" href="#blog">
+          <span class="blog-tag">Artículos</span>
+          <img src="assets/img/blog-anemia.jpg" alt="Qué dice la evidencia sobre nutrición y anemia" loading="lazy" decoding="async">
+          <div class="blog-info">
+            <div class="blog-meta"><span>05 ago 2026</span><span class="dot"></span><span>7 min</span></div>
+            <h3 class="blog-title">Qué dice la evidencia sobre nutrición y anemia</h3>
+          </div>
+        </a>
+
+        <a class="blog-card" href="#blog">
+          <span class="blog-tag">Recetas</span>
+          <img src="assets/img/blog-enfermedades.jpg" alt="Snacks reales para media tarde" loading="lazy" decoding="async">
+          <div class="blog-info">
+            <div class="blog-meta"><span>22 jul 2026</span><span class="dot"></span><span>3 min</span></div>
+            <h3 class="blog-title">Snacks reales para media tarde, sin culpa</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       FAQ
+       ========================================================= -->
+  <section class="section section-alt has-watermark" id="faq">
+    <div class="brand-watermark brand-watermark-left" aria-hidden="true"><img src="assets/img/logo-icon-watermark.png" alt=""></div>
+    <div class="container">
+      <div class="section-head center reveal">
+        <p class="eyebrow" style="justify-content:center;">Preguntas frecuentes</p>
+        <h2 class="section-title">Antes de reservar</h2>
+      </div>
+
+      <div class="faq-list reveal">
+        <details class="faq-item">
+          <summary>
+            ¿La consulta es solo virtual o también presencial?
+            <span class="faq-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></span>
+          </summary>
+          <p class="faq-answer">Ambas modalidades están disponibles. Puedes reservar tu cita presencial en consultorio o una consulta virtual por videollamada, según lo que te resulte más cómodo.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            ¿Cómo funciona la consulta inicial?
+            <span class="faq-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></span>
+          </summary>
+          <p class="faq-answer">Revisamos tu historia clínico-nutricional, hábitos actuales y objetivos, y se realiza la evaluación antropométrica. Con esa información se diseña tu plan inicial y los próximos pasos de seguimiento.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            ¿Cuáles son las formas de pago?
+            <span class="faq-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></span>
+          </summary>
+          <p class="faq-answer">En consulta presencial se acepta efectivo. Para consultas virtuales, el pago se realiza por transferencia bancaria antes de la cita.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            ¿Qué debo preparar antes de mi consulta?
+            <span class="faq-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></span>
+          </summary>
+          <p class="faq-answer">Si tienes exámenes de laboratorio recientes, tráelos o envíalos antes de la cita. Para la evaluación antropométrica, usa ropa cómoda y ligera.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       CONTACTO
+       ========================================================= -->
+  <section class="section" id="contacto">
+    <div class="container contact-layout">
+      <div class="section-head center reveal">
+        <div class="contact-avatar">
+          <img src="assets/img/retrato-bata-manos.jpg" alt="Shelsea García sonriendo, con bata blanca" loading="lazy" decoding="async">
+        </div>
+        <p class="eyebrow" style="justify-content:center;">Contacto</p>
+        <h2 class="section-title">Conversemos</h2>
+        <p class="section-sub" style="margin-inline:auto;">Escríbenos y te respondemos a la brevedad, o coordina directo por WhatsApp.</p>
+      </div>
+
+      <form class="contact-form reveal" data-contact-form novalidate>
+        <div class="form-row">
+          <div class="field">
+            <label for="f-nombre">Nombre</label>
+            <input id="f-nombre" name="nombre" type="text" autocomplete="given-name" required>
+          </div>
+          <div class="field">
+            <label for="f-apellido">Apellido</label>
+            <input id="f-apellido" name="apellido" type="text" autocomplete="family-name" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-email">Correo electrónico</label>
+          <input id="f-email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="f-asunto">Asunto</label>
+          <input id="f-asunto" name="asunto" type="text" required>
+        </div>
+        <div class="field">
+          <label for="f-mensaje">Mensaje</label>
+          <textarea id="f-mensaje" name="mensaje" required></textarea>
+        </div>
+        <button class="btn btn-primary btn-block" type="submit">Enviar mensaje</button>
+        <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+      </form>
+
+      <div class="contact-map reveal">
+        <!-- EDITA AQUÍ: reemplaza bbox/marker por la ubicación real del consultorio -->
+        <iframe
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-70.6691%2C19.4562%2C-70.6391%2C19.4862&layer=mapnik&marker=19.4712%2C-70.6541"
+          loading="lazy" title="Ubicación del consultorio NUTRICYT" aria-label="Mapa de ubicación del consultorio"></iframe>
+        <div class="map-caption">
+          <span>PUCMM Santiago — Autopista Duarte Km 1½ · Santiago de los Caballeros, RD</span>
+          <span>Lun–Vie 8:00 a.m.–8:00 p.m. · Sáb 8:00 a.m.–12:30 p.m.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <a class="brand" href="#top">
+          <img class="brand-icon" src="assets/img/logo-icon.png" alt="">
+          <span class="brand-word">nutricyt</span>
+        </a>
+        <p class="footer-tagline">Nutriendo tus células, potenciando tu vida.</p>
+      </div>
+
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h3>Navegación</h3>
+          <a href="#sobre-mi">Sobre mí</a>
+          <a href="#areas-atencion">Áreas de atención</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#blog">Blog</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+        <div class="footer-col">
+          <h3>Consultorio</h3>
+          <p>PUCMM Santiago — Autopista Duarte Km 1½</p>
+          <p>Santiago de los Caballeros, RD</p>
+          <p style="font-size:0.8rem;opacity:.75;">Lun–Vie 8:00 a.m.–8:00 p.m. · Sáb 8:00 a.m.–12:30 p.m.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Contacto</h3>
+          <a href="https://wa.me/18097499916" target="_blank" rel="noopener">WhatsApp: +1 809 749 9916</a>
+          <a href="mailto:nutricyt.com@nutricyt.com">nutricyt.com@nutricyt.com</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> NUTRICYT — Shelsea García, Nutricionista-Dietista.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- =========================================================
+     WHATSAPP WIDGET (simulación de chat, sin IA)
+     ========================================================= -->
+<div class="wa-widget" data-wa-widget>
+  <div class="wa-panel" data-wa-panel role="dialog" aria-label="Chat de NUTRICYT">
+    <div class="wa-head">
+      <span class="wa-avatar" aria-hidden="true"><img src="assets/img/logo-icon.png" alt=""></span>
+      <div class="wa-head-text">
+        <strong>NUTRICYT</strong>
+        <span>En línea</span>
+      </div>
+    </div>
+    <div class="wa-body" data-wa-body>
+      <div class="wa-msg bot">¡Hola! 👋 Soy el asistente virtual de NUTRICYT, ¿en qué te puedo ayudar?</div>
+    </div>
+    <form class="wa-form" data-wa-form>
+      <label class="sr-only" for="wa-input">Escribe tu mensaje</label>
+      <input id="wa-input" data-wa-input type="text" placeholder="Escribe un mensaje…" autocomplete="off">
+      <button type="submit" aria-label="Enviar">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 12l16-8-6 16-3-6-7-2z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+      </button>
+    </form>
+  </div>
+
+  <button class="wa-fab" data-wa-fab aria-expanded="false" aria-label="Abrir chat de WhatsApp">
+    <span class="wa-badge" aria-hidden="true"></span>
+    <svg class="icon-chat" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3C7.03 3 3 6.58 3 11c0 2.1.94 4.02 2.5 5.46L4.8 20.2a.6.6 0 00.79.7l3.98-1.6c.77.22 1.6.34 2.43.34 4.97 0 9-3.58 9-8s-4.03-8-9-8z" fill="currentColor"/></svg>
+    <svg class="icon-close" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/></svg>
+  </button>
+</div>
+
+<script defer src="lib/manifest.js"></script>
+<script defer src="main.js?v=20260916"></script>
+</body>
+</html>
