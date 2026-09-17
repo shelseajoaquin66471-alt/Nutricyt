@@ -311,6 +311,21 @@ h1, h2, h3, h4 { text-wrap: balance; line-height: 1.08; letter-spacing: -0.01em;
   background:
     linear-gradient(180deg, rgba(23,26,24,0.42) 0%, rgba(23,26,24,0.05) 32%, rgba(23,26,24,0.10) 55%, rgba(20,26,26,0.72) 100%);
 }
+/* Light, plain-background photo: crop tighter on the face/torso (instead of
+   the full body) and swap the dark-photo gradient + cream text for a
+   light-background treatment (dark text), matching the WELLNESS-style
+   reference the client sent. */
+.hero-light .hero-media img { object-position: 50% 0%; transform: scale(1.12); }
+.hero-light .hero-media::after {
+  background:
+    linear-gradient(180deg, rgba(250,247,241,0.08) 0%, rgba(250,247,241,0.02) 30%, rgba(250,247,241,0.05) 55%, rgba(250,247,241,0.6) 100%);
+}
+.hero-light .hero-impact, .hero-light .hero-title { color: var(--petroleo); }
+.hero-light .hero-sub { color: var(--ink-soft); }
+.hero-light .hero-scroll { color: var(--ink-mute); }
+.hero-light .hero-scroll-line { background: linear-gradient(180deg, rgba(23,24,26,0.6), transparent); }
+.hero-light .btn-on-dark { color: var(--ink); border-color: var(--line); }
+.hero-light .btn-on-dark:hover { border-color: var(--petroleo); color: var(--petroleo); background: var(--petroleo-soft); }
 .hero-inner {
   position: relative;
   z-index: 2;
