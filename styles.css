@@ -506,7 +506,6 @@ h1, h2, h3, h4 { text-wrap: balance; line-height: 1.08; letter-spacing: -0.01em;
 .services-list-head h3 { font-size: 1.12rem; color: var(--cream); margin: 0; }
 .services-list-meta { flex-shrink: 0; font-family: var(--sans); font-size: 0.82rem; color: rgba(247,243,236,0.65); }
 .services-list-body p { font-size: 0.94rem; color: rgba(247,243,236,0.78); line-height: 1.55; }
-.services-cta { margin-top: clamp(2rem, 4vw, 2.8rem); }
 .services-band-media { position: relative; border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-lift); }
 .services-band-media img { width: 100%; height: 100%; object-fit: cover; display: block; min-height: 360px; }
 .services-band-quote {
