@@ -532,29 +532,15 @@ h1, h2, h3, h4 { text-wrap: balance; line-height: 1.08; letter-spacing: -0.01em;
 .services-band-quote span { font-size: 0.82rem; color: rgba(247,243,236,0.75); }
 
 /* =============================================================
-   9. ISAK showcase
-   ============================================================= */
-.isak {
-  display: grid;
-  gap: 2.5rem;
-  align-items: center;
-}
-.isak-media { border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-lift); }
-.isak-media img { width: 100%; display: block; }
-.isak-list { display: grid; gap: 0.9rem; margin-top: 1.6rem; }
-.isak-list li { display: flex; gap: 0.7rem; align-items: flex-start; font-size: 0.96rem; color: var(--ink-soft); }
-.isak-list li svg { flex-shrink: 0; margin-top: 0.2rem; color: var(--coral-d); }
-
-/* =============================================================
    9b. CTA band (full-bleed break between Servicios y Blog)
    ============================================================= */
-.cta-band { position: relative; min-height: 56vh; display: flex; align-items: center; justify-content: center; overflow: clip; }
+.cta-band { position: relative; min-height: 85vh; display: flex; align-items: flex-end; justify-content: center; overflow: clip; }
 .cta-band-media { position: absolute; inset: 0; }
-.cta-band-media img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; }
+.cta-band-media img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 36%; }
 .cta-band-media::after {
   content: "";
   position: absolute; inset: 0;
-  background: linear-gradient(180deg, rgba(32,54,64,0.78), rgba(23,26,24,0.55) 55%, rgba(32,54,64,0.82));
+  background: linear-gradient(180deg, rgba(23,26,24,0.05) 0%, rgba(23,26,24,0.08) 40%, rgba(23,26,24,0.55) 72%, rgba(23,26,24,0.85) 100%);
 }
 .cta-band-inner { position: relative; z-index: 2; text-align: center; padding-block: 3.5rem; }
 .cta-band-inner .section-title { color: var(--cream); max-width: 22ch; margin-inline: auto; }
@@ -951,7 +937,6 @@ h1, h2, h3, h4 { text-wrap: balance; line-height: 1.08; letter-spacing: -0.01em;
 
 @media (min-width: 720px) {
   .about-grid { grid-template-columns: 0.95fr 1.05fr; }
-  .isak { grid-template-columns: 1.05fr 0.95fr; }
   .services-band-grid { grid-template-columns: 1.1fr 0.9fr; }
   .services-band-media img { min-height: 100%; }
   .form-row { grid-template-columns: 1fr 1fr; }

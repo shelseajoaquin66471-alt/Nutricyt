@@ -6,10 +6,9 @@ cualquier hosting estático.
 
 ## Antes de publicar — edita esto
 
-1. **Fotos.** Las 5 fotos principales (hero, Sobre mí ×2, banda "¿Lista para empezar?",
-   avatar de Contacto) ya son las reales. Las de `servicio-*.jpg`, `blog-*.jpg` e
-   `informe-isak.jpg` siguen siendo ilustraciones genéricas — opcional sustituirlas por
-   fotografía real de cada servicio/receta si quieres.
+1. **Fotos.** Las fotos principales (hero, Sobre mí ×2, banda "¿Lista para empezar?",
+   avatar de Contacto) ya son las reales. Las de `blog-*.jpg` siguen siendo ilustraciones
+   genéricas — opcional sustituirlas por fotografía real de cada receta si quieres.
 
 2. **Precios.** Busca `[PRECIO]` en `index.html` (una vez por tarjeta de servicio) y
    escribe el precio real de cada consulta, o quítalo si prefieres no mostrar precio.
